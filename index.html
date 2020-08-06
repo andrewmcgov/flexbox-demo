@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>💪 flexbox demo 📦</title>
+  </head>
+  <body>
+    <h1>💪 flexbox demo 📦</h1>
+    <div
+      class="flex-container flex-direction-row justify-content-flex-start align-items-flex-start"
+    >
+      <span class="flex-item one">💪</span>
+      <span class="flex-item two">💪</span>
+      <span class="flex-item three">💪</span>
+      <span class="flex-item four">💪</span>
+    </div>
+    <div class="controls-container">
+      <div class="control flex-direction">
+        <h2>flex-direction</h2>
+        <button
+          class="button active flex-direction-button"
+          data-value="flex-direction-row"
+        >
+          row
+        </button>
+        <button
+          class="button flex-direction-button"
+          data-value="flex-direction-row-reverse"
+        >
+          row-reverse
+        </button>
+        <button
+          class="button flex-direction-button"
+          data-value="flex-direction-column"
+        >
+          column
+        </button>
+        <button
+          class="button flex-direction-button"
+          data-value="flex-direction-column-reverse"
+        >
+          column-reverse
+        </button>
+      </div>
+      <div class="control justify-content">
+        <h2>justify-content</h2>
+        <button
+          class="button active justify-content-button"
+          data-value="justify-content-flex-start"
+        >
+          flex-start
+        </button>
+        <button
+          class="button justify-content-button"
+          data-value="justify-content-flex-end"
+        >
+          flex-end
+        </button>
+        <button
+          class="button justify-content-button"
+          data-value="justify-content-center"
+        >
+          center
+        </button>
+        <button
+          class="button justify-content-button"
+          data-value="justify-content-space-around"
+        >
+          space-around
+        </button>
+        <button
+          class="button justify-content-button"
+          data-value="justify-content-space-between"
+        >
+          space-between
+        </button>
+      </div>
+      <div class="control align-items">
+        <h2>align-items</h2>
+        <button
+          class="button active align-items-button"
+          data-value="align-items-flex-start"
+        >
+          flex-start
+        </button>
+        <button
+          class="button align-items-button"
+          data-value="align-items-flex-end"
+        >
+          flex-end
+        </button>
+        <button
+          class="button align-items-button"
+          data-value="align-items-center"
+        >
+          center
+        </button>
+        <button
+          class="button align-items-button"
+          data-value="align-items-stretch"
+        >
+          stretch
+        </button>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
